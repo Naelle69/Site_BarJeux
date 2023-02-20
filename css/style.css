@@ -1,0 +1,433 @@
+body{
+  background-color: #FAF8F2;
+  font:roboto;
+  padding: 0%;
+  margin: 0%;
+}
+
+header{
+    width: 100%; /* adapte la largeur de l'écran */
+    min-height: 500px; /* hauteur minimale */
+    height: 929px; /* hauteur maximale */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../images/fond.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.contenair{
+  height: 100%;
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 20%;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+    height: 100%;
+    width: 12%;
+    background-color: #201610;
+    overflow-x: hidden;
+  /*   padding-top: 20px; */
+  /*   gap: 50px; */
+    position: fixed;
+    z-index: 2;
+  }
+  
+  .navbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #C2A046;
+  } 
+
+  .navbar .icon {
+    display: none;
+  }
+  
+  .socialmedia{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+/* BOUTTON */
+  .boutton1{
+    box-shadow: #201610;
+    background-color:#C2A046 ;
+    border: solid 4px #C2A046;
+    border-radius:5px 5px 5px 5px;
+    height: 50px;
+    width: 250px;
+    margin-top: 50px;
+  }
+
+  .boutton2{
+    box-shadow: #201610;
+    background-color:#C2A046 ;
+    border: solid 4px #C2A046;
+    border-radius:5px 5px 5px 5px;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+
+/*   CARDS */
+.cards{
+  display: flex;
+  flex-direction: row;
+  transform: translateY(42px);
+}
+
+.flip-card {
+  margin-top: 50px;
+  background-color: transparent;
+  perspective: 1000px;  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 280px;
+  height: 378px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  color: white;
+}
+
+.flip-card-front {
+  background-image: url("../images/pattern.svg");
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: #ffffff;
+  color: white;
+  z-index: 2;
+  border:#201610 solid 3px;
+  box-shadow: #3e3029;
+  border-radius:5px 5px 5px 5px;
+}
+
+.rouge{
+  background-image: url("../images/carte-jeux.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #ac132a;
+  transform: rotateY(180deg);
+  z-index: 1;
+  border:#201610 solid 3px;
+  box-shadow: #3e3029;
+  border-radius:5px 5px 5px 5px;
+}
+
+.verte {
+  background-image: url("../images/carte-boissons.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #6EAD57;
+  transform: rotateY(180deg);
+  z-index: 1;
+  border:#201610 solid 3px;
+  box-shadow: #3e3029;
+  border-radius:5px 5px 5px 5px;
+}
+
+.jaune {
+  background-image: url("../images/carte-encas.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #C2A046;
+  transform: rotateY(180deg);
+  z-index: 1;
+  border:#201610 solid 3px;
+  border-radius:5px 5px 5px 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.card1{
+  transform:rotate(-60deg);
+}
+
+.card2{
+ z-index: 2;
+ transform: translateY(-60px);
+ box-shadow: #2e2723;
+}
+
+.card3{
+  transform:rotate(60deg);
+}
+
+.flip-card-back {
+display: flex;
+align-items: flex-end;
+justify-content: center;
+font-size:16px;
+font-weight: bold;
+color: #201610;
+}
+
+ .vide2{
+  height: 30px;
+}
+
+.vide1{
+  height: 50px;
+}
+
+/* PAGE2: DECOUVRIR TOUTES NOS CARTES */
+.page2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.colonne2{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-left: 15%;
+}
+
+/* .cards{
+  gap:100px;
+} */
+
+.cardcommon{
+position: relative;
+width: 290px;
+height: 388px;
+text-align: center;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+font-size:16px;
+font-weight: bold;
+color: #201610;
+}
+
+.card-rouge{
+  background-image: url("../images/carte-jeux.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #ac132a;
+  color: white;
+  z-index: 1;
+  border:#201610 solid 3px;
+  border-radius:5px 5px 5px 5px;
+  transition: ease-in-out 0.3s; 
+}
+
+.card-verte {
+  background-image: url("../images/carte-boissons.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #6EAD57;
+  color: white;
+  z-index: 1;
+  border:#201610 solid 3px;
+  border-radius:5px 5px 5px 5px;
+  margin-left: 60px;
+  margin-right: 60px;
+  transition: ease-in-out 0.3s;
+}
+
+.card-jaune {
+  background-image: url("../images/carte-encas.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #C2A046;
+  color: white;
+  z-index: 1;
+  border:#201610 solid 3px;
+  border-radius:5px 5px 5px 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+}
+
+.card-rouge:hover, .card-jaune:hover, .card-verte:hover{
+  transform: scale(1.2);
+  cursor: pointer; 
+}
+
+
+
+
+/* --------------PAGE3- --------------*/
+.page3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenair-cards{
+width: 100%;
+}
+
+.titrered{
+  font-size: 44px;
+  font-weight:600;
+  color:#ac132a;
+}
+
+.titregreen{
+  font-size: 44px;
+  font-weight:600;
+  color:#6EAD57;
+}
+
+.titregold{
+  font-size: 44px;
+  font-weight:600;
+  color:#C2A046;
+}
+
+/* GRID ROUGE */
+.grid-container {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  width: 65%;
+  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-item {
+  padding: 20px;
+  margin: 10px;
+  width: 220px;
+  height: 260px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ac132a;
+  border:#201610 solid 3px;
+  border-radius:5px 5px 5px 5px;
+  transition: ease-in-out 0.3s;
+}
+
+.grid-item:hover{
+  transform: scale(1.1);
+  cursor: pointer; 
+}
+
+
+/* GRID VERT */
+.grid-container2 {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  width: 65%;
+  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid-item2 {
+  padding: 20px;
+  margin: 10px;
+  width: 220px;
+  height: 260px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6EAD57;
+  border:#201610 solid 3px;
+  border-radius:5px 5px 5px 5px;
+  transition: ease-in-out 0.3s;
+}
+
+.grid-item2:hover{
+  transform: scale(1.1);
+  cursor: pointer; 
+}
+
+.grid-vide{
+  background-color: #FAF8F2;
+ /*  width: 220px;
+  align-items: stretch;*/
+  padding-left: 10px; 
+  width: 220px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* GRID JAUNE */
+.grid-container3 {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  width: 65%;
+  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid-item3 {
+  padding: 20px;
+  margin: 10px;
+  width: 220px;
+  height: 260px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #C2A046;
+  border:#201610 solid 3px;
+  border-radius:5px 5px 5px 5px;
+  transition: ease-in-out 0.3s;
+}
+
+.grid-item3:hover{
+  transform: scale(1.1);
+  cursor: pointer; 
+}
+
+.img-card-red{
+  height: 130px;
+  margin-bottom: 20px;
+}
+
+.colorbutton{
+  background-color: blue;
+}
+
+

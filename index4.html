@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+
+<p>Use the addEventListener() method to attach a "click" event to a p element:</p>
+
+<button class="boutton1" id="redirect-button">Découvrir toutes nos cartes</button>
+
+<script>
+document.getElementById("redirect-button").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("redirect-button").innerHTML = "YOU CLICKED ME!";
+  document.getElementById("redirect-button").style.background = 'blue';
+}
+</script>
+
+</body>
+</html>
